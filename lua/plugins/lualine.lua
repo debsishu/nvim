@@ -39,9 +39,16 @@ return {
                 lualine_a = {"mode"},
                 lualine_b = {"branch", "diff", "diagnostics"},
                 lualine_c = {"filename"},
-                lualine_x = {"fileformat", "filetype"},
+                lualine_x = {"searchcount", "fileformat", "filetype"},
                 lualine_y = {"progress"},
-                lualine_z = {"location"}
+                lualine_z = {
+                    {
+                        function()
+                            return os.date("!%d/%m/%y %H:%M UTC")
+                        end,
+                        icon = "",
+                    }
+                }
             },
             inactive_sections = {
                 lualine_a = {},
