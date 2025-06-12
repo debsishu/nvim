@@ -8,6 +8,11 @@ return {
         "MunifTanjim/nui.nvim",
     },
     opts = {
+        filesystem = {
+            filtered_items = {
+                visible = true,
+            },
+        },
     },
     keys = {
         { "<leader>e", "<cmd>Neotree toggle<CR>", desc = "Toggle Neo-tree" },
