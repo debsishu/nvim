@@ -33,6 +33,5 @@ vim.keymap.set("n", "<leader>Y", '"+Y')
 -- Leader d to delete in void register
 vim.keymap.set("n", "<leader>d", '"_d')
 vim.keymap.set("v", "<leader>d", '"_d')
-vim.keymap.set("n", "<leader>bod", "<CMD>%bd|e#|bd#|e<CR>", { desc = "Delete All Other Buffers except current" })
 
 vim.keymap.set("n", "<leader>l", ":Lazy<CR>", { desc = "Open Lazy plugin manager dashboard" })

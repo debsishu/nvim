@@ -31,5 +31,14 @@ return {
         scope = { enabled = true },
         statuscolumn = { enabled = true },
         words = { enabled = true },
+        rename = { enabled = true },
+        scratch = { enabled = true },
+        bufdelete = { enabled = true },
     },
+    keys = {
+        { "<leader>.",  function() Snacks.scratch() end, desc = "Toggle Scratch Buffer" },
+        { "<leader>S",  function() Snacks.scratch.select() end, desc = "Select Scratch Buffer" },
+        { "<leader>bd",  function() Snacks.bufDelete() end, desc = "Delete/Close Current Buffer" },
+        { "<leader>bod",  function() Snacks.bufdelete.other() end, desc = "Delete/Close All Other Buffers Except the Current" },
+    }
 }
