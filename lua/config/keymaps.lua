@@ -35,3 +35,8 @@ vim.keymap.set("n", "<leader>d", '"_d')
 vim.keymap.set("v", "<leader>d", '"_d')
 
 vim.keymap.set("n", "<leader>l", ":Lazy<CR>", { desc = "Open Lazy plugin manager dashboard" })
+
+vim.keymap.set("v", ">", ">gv", { desc = "Indent and stay in visual mode" })
+vim.keymap.set("v", "<", "<gv", { desc = "Outdent and stay in visual mode" })
+
+vim.keymap.set("n", "<leader>uw", function() vim.wo.wrap = not vim.wo.wrap end, { desc = "Toggle Line Wrap" })
