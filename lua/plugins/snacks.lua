@@ -19,7 +19,7 @@ return {
                     { icon = " ", key = "f", desc = "Find File", action = ":lua require('telescope.builtin').find_files()" },
                     { icon = " ", key = "g", desc = "Find Text", action = ":lua require('telescope.builtin').live_grep()" },
                     { icon = " ", key = "r", desc = "Recent Files", action = ":lua require('fzf-lua').oldfiles()" },
-                    { icon = " ", key = "s", desc = "Restore Session", action = ":lua require('persistence').load({ last = true })" },
+                    { icon = " ", key = "s", desc = "Restore Session", action = ":lua require('persistence').load()" },
                     { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
                     { icon = " ", key = "q", desc = "Quit", action = ":qa" },
                 },

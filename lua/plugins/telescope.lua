@@ -30,6 +30,14 @@ return {
                 "packageInfo.bak",
                 ".gradle",
             },
+            path_display = { "smart" },
+            sorting_strategy = "ascending",
+            layout_config = {
+                prompt_position = "top",
+                width = 0.95,       -- 95% of the editor width
+                height = 0.90,      -- 90% of the editor height
+                preview_width = 0.6 -- optional: widen preview too 60%
+            },
         },
     },
     keys = {
