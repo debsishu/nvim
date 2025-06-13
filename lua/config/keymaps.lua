@@ -35,3 +35,6 @@ vim.keymap.set("v", ">", ">gv", { desc = "Indent and stay in visual mode" })
 vim.keymap.set("v", "<", "<gv", { desc = "Outdent and stay in visual mode" })
 
 vim.keymap.set("n", "<leader>uw", function() vim.wo.wrap = not vim.wo.wrap end, { desc = "Toggle Line Wrap" })
+
+vim.keymap.set("n", "Q", "<nop>")
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "makes file executable" })

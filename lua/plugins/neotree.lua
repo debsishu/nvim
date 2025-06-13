@@ -22,6 +22,11 @@ return {
                 filtered_items = {
                     visible = true,
                 },
+                follow_current_file = {
+                    enabled = true,
+                    leave_dirs_open = false, 
+                },
+                hijack_netrw_behavior = "open_current", -- or "open_default"
             },
         }
     end,
