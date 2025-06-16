@@ -1,16 +1,12 @@
 return {
     'romgrk/barbar.nvim',
     dependencies = {
-        'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
-        'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+        'lewis6991/gitsigns.nvim',
+        'nvim-tree/nvim-web-devicons',
     },
     event = "BufAdd",
     init = function() vim.g.barbar_auto_setup = false end,
     opts = {
-        -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-        -- animation = true,
-        -- insert_at_start = true,
-        -- …etc.
         sidebar_filetypes = {
             -- Offset when Neo-tree is open
             ["neo-tree"] = {
@@ -40,5 +36,5 @@ return {
         { "[B", "<Cmd>BufferMovePrevious<CR>", desc = "Move buffer prev" },
         { "]B", "<Cmd>BufferMoveNext<CR>", desc = "Move buffer next" },
     },
-    version = '^1.0.0', -- optional: only update when a new 1.x version is released
+    version = '^1.0.0',
 }

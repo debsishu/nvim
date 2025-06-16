@@ -39,12 +39,14 @@ return {
                 lualine_a = {"mode"},
                 lualine_b = {"branch", "diff", "diagnostics"},
                 lualine_c = {"filename"},
-                lualine_x = {"searchcount", "fileformat", "filetype"},
+                lualine_x = {"filetype"},
                 lualine_y = {"progress"},
                 lualine_z = {
                     {
                         function()
-                            return os.date("!%d/%m/%y %H:%M UTC")
+                            local utc = os.time(os.date("!*t"))
+                            local ist = utc + 19800
+                            return "IST " .. os.date("%H:%M", ist) .. " | UTC " .. os.date("!%H:%M")
                         end,
                         icon = "",
                     }
